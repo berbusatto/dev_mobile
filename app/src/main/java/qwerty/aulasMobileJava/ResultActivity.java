@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
+import java.util.Locale;
+
 public class ResultActivity extends Activity {
 
     @Override
@@ -28,13 +30,10 @@ public class ResultActivity extends Activity {
         double resultado = precoEtanolBack / precoGasolinaBack;
 
         if(resultado >= 0.7){
-            resultadoView.setText("Abasteça com Gasolina! A razão entre  é de " + resultado);
+            resultadoView.setText("Abasteça com Gasolina! \nA razão é de " + resultado);
         } else {
-            resultadoView.setText("Abasteça com Etanol! A razão entre alcool e gasolina é de " + resultado);
-
+            resultadoView.setText("Abasteça com Etanol! \nA razão é de " + String.format("%.2f", resultado));
         }
-
-        resultadoView.setText("O razão entre alcool e gasolina é de " + resultado);
 
         Button backButton = findViewById(R.id.botaoVoltar);
 
