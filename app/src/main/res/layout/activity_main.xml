@@ -35,7 +35,7 @@
         <View
             android:id="@+id/divider6"
             android:layout_width="match_parent"
-            android:layout_height="111dp"
+            android:layout_height="81dp"
             android:visibility="visible" />
 
         <TextView
@@ -74,7 +74,7 @@
             android:textAlignment="center"
             android:textColor="#EBEAEC"
             android:textSize="20sp"
-            android:textStyle="bold|italic"
+            android:textStyle="bold"
             android:theme="@style/Theme.App01"
             android:typeface="sans" />
 
@@ -107,7 +107,7 @@
             android:textAlignment="center"
             android:textColor="#EBEAEC"
             android:textSize="20sp"
-            android:textStyle="bold|italic"
+            android:textStyle="bold"
             android:theme="@style/Theme.App01"
             android:typeface="sans" />
 
@@ -178,7 +178,7 @@
             android:textAlignment="center"
             android:textColor="#EBEAEC"
             android:textSize="20sp"
-            android:textStyle="bold|italic"
+            android:textStyle="bold"
             android:theme="@style/Theme.App01"
             android:typeface="sans" />
 
@@ -211,7 +211,7 @@
             android:textAlignment="center"
             android:textColor="#EBEAEC"
             android:textSize="20sp"
-            android:textStyle="bold|italic"
+            android:textStyle="bold"
             android:theme="@style/Theme.App01"
             android:typeface="sans" />
 

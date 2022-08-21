@@ -6,30 +6,248 @@
     android:layout_height="match_parent"
     android:background="#091e28">
 
-    <TextView
-        android:id="@+id/textoResultado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" "
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.285" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="408dp"
+        android:layout_height="501dp"
+        tools:layout_editor_absoluteX="3dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elegantTextHeight="false"
+                android:padding="3sp"
+                android:text="Valores Informados"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="251dp"
+                android:layout_height="match_parent"
+                android:padding="3sp"
+                android:text="R$/Litro Gasolina"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/rslitrogasolina"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:text="0.00"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:text="R$/Litro Etanol"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/rslitroetanol"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:text="0.00"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:text="KM/Litro Gasolina"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/kmlitrogasolina"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:text="0.00"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:text="KM/Litro Etanol"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/kmlitroetanol"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:text="0.00"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elegantTextHeight="false"
+                android:padding="3sp"
+                android:text="Resultado"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="3sp"
+                android:text="Relação Etanol/Gasolina"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/relacaoetanolgasolina"
+                android:layout_height="match_parent"
+                android:padding="3sp"
+                android:text="0.00"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/TextView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:text="Gasto com Gasolina"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/gastogasolina"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:text="0.00"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/TextView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:text="Gasto com Etanol"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/gastoetanol"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:text="0.00"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </TableRow>
+
+    </TableLayout>
 
     <Button
         android:id="@+id/botaoVoltar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFDE59 "
-        android:foregroundTint="#75D1B1"
+        android:foregroundTint="#FFDE59 "
         android:text="Voltar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textoResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:textColor="#FFDE59 "
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/botaoVoltar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textoResultado"
-        app:layout_constraintVertical_bias="0.258" />
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

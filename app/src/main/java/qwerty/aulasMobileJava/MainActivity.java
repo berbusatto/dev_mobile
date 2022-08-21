@@ -12,12 +12,18 @@ import androidx.annotation.Nullable;
 
 public class MainActivity extends Activity {
 
-    public static final String EXTRA_VALOR_UM = "VALOR_UM";
-    public static final String EXTRA_VALOR_DOIS = "VALOR_DOIS";
+    public static final String EXTRA_PRECO_GASOLINA = "PRECO_GASOLINA";
+    public static final String EXTRA_PRECO_ETANOL = "PRECO_ETANOL";
+
+    public static final String EXTRA_CONSUMO_GASOLINA = "CONSUMO_GASOLINA";
+    public static final String EXTRA_CONSUMO_ETANOL = "CONSUMO_ETANOL";
+
 
     private Button botaoCalcular;
     private EditText precoGasolina;
     private EditText precoEtanol;
+    private EditText consumoGasolina;
+    private EditText consumoEtanol;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState){
@@ -27,6 +33,8 @@ public class MainActivity extends Activity {
 
         precoGasolina = findViewById(R.id.precoGasolina);
         precoEtanol = findViewById(R.id.precoEtanol);
+        consumoGasolina = findViewById(R.id.consumoGasolina);
+        consumoEtanol = findViewById(R.id.consumoEtanol);
         botaoCalcular = findViewById(R.id.botaoCalcular);
 
         botaoCalcular.setOnClickListener((new View.OnClickListener() {
@@ -42,11 +50,15 @@ public class MainActivity extends Activity {
         // PARAMETROS DO INTENT(TELA ORIGEM, TELA DESTINO)
         EditText precoGasolina = (EditText) findViewById(R.id.precoGasolina);
         EditText precoEtanol = (EditText) findViewById(R.id.precoEtanol);
+        EditText consumoGasolina = (EditText) findViewById(R.id.consumoGasolina);
+        EditText consumoEtanol = (EditText) findViewById(R.id.consumoEtanol);
 
-        intent.putExtra(EXTRA_VALOR_UM, precoGasolina.getText().toString());
-        intent.putExtra(EXTRA_VALOR_DOIS, precoEtanol.getText().toString());
+        intent.putExtra(EXTRA_PRECO_GASOLINA, precoGasolina.getText().toString());
+        intent.putExtra(EXTRA_PRECO_ETANOL, precoEtanol.getText().toString());
+        intent.putExtra(EXTRA_CONSUMO_GASOLINA, consumoGasolina.getText().toString());
+        intent.putExtra(EXTRA_CONSUMO_ETANOL, consumoEtanol.getText().toString());
+
+
         startActivity(intent);
-
-
     }
 }
