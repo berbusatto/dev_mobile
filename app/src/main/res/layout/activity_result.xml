@@ -43,7 +43,7 @@
                 android:layout_height="match_parent"
                 android:padding="3sp"
                 android:text="R$/Litro Gasolina"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />
 
@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:padding="3sp"
                 android:text="R$/Litro Etanol"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />
 
@@ -93,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:padding="3sp"
                 android:text="KM/Litro Gasolina"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />
 
@@ -118,7 +118,7 @@
                 android:layout_height="wrap_content"
                 android:padding="3sp"
                 android:text="KM/Litro Etanol"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />
 
@@ -161,7 +161,7 @@
                 android:layout_height="match_parent"
                 android:padding="3sp"
                 android:text="Relação Etanol/Gasolina"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />
 
@@ -186,7 +186,7 @@
                 android:layout_height="wrap_content"
                 android:padding="3sp"
                 android:text="Gasto com Gasolina"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />
 
@@ -211,7 +211,7 @@
                 android:layout_height="wrap_content"
                 android:padding="3sp"
                 android:text="Gasto com Etanol"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />
 
