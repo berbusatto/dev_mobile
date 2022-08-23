@@ -58,7 +58,6 @@ public class MainActivity extends Activity {
         intent.putExtra(EXTRA_CONSUMO_GASOLINA, consumoGasolina.getText().toString());
         intent.putExtra(EXTRA_CONSUMO_ETANOL, consumoEtanol.getText().toString());
 
-
         startActivity(intent);
     }
 }
