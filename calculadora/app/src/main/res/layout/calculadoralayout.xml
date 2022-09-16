@@ -28,8 +28,14 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="409dp"
         android:layout_height="671dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="59dp">
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <LinearLayout
             android:id="@+id/linearLayout3"
@@ -40,14 +46,23 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/resultDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textAlignment="viewEnd"
+                android:textColor="#84EF66"
+                android:textSize="36sp" />
+        </LinearLayout>
 
         <TableLayout
-            android:layout_width="407dp"
-            android:layout_height="587dp"
-            android:layout_marginStart="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="1dp"
-            android:layout_marginEnd="1dp"
             android:layout_marginBottom="1dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -59,7 +74,7 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/botao7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:height="102dp"
@@ -69,7 +84,7 @@
                     app:iconPadding="8dp" />
 
                 <Button
-                    android:id="@+id/button4"
+                    android:id="@+id/botao8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:height="102dp"
@@ -79,7 +94,7 @@
                     app:iconPadding="8dp" />
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/botao9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:height="102dp"
@@ -89,7 +104,7 @@
                     app:iconPadding="8dp" />
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/botaoDiv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:height="102dp"
@@ -104,7 +119,7 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button8"
+                    android:id="@+id/botao4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:height="102dp"
@@ -114,7 +129,7 @@
                     app:iconPadding="8dp" />
 
                 <Button
-                    android:id="@+id/button7"
+                    android:id="@+id/botao5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:height="102dp"
@@ -124,7 +139,7 @@
                     app:iconPadding="8dp" />
 
                 <Button
-                    android:id="@+id/button5"
+                    android:id="@+id/botao6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:height="102dp"
@@ -134,7 +149,7 @@
                     app:iconPadding="8dp" />
 
                 <Button
-                    android:id="@+id/button6"
+                    android:id="@+id/botaoMult"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:height="102dp"
@@ -149,7 +164,7 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button12"
+                    android:id="@+id/botao1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:height="102dp"
@@ -159,7 +174,7 @@
                     app:iconPadding="8dp" />
 
                 <Button
-                    android:id="@+id/button11"
+                    android:id="@+id/botao2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:height="102dp"
@@ -169,7 +184,7 @@
                     app:iconPadding="8dp" />
 
                 <Button
-                    android:id="@+id/button10"
+                    android:id="@+id/botao3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:height="102dp"
@@ -179,7 +194,7 @@
                     app:iconPadding="8dp" />
 
                 <Button
-                    android:id="@+id/button9"
+                    android:id="@+id/botaoSub"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:height="102dp"
@@ -194,7 +209,7 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button16"
+                    android:id="@+id/botaoDP"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:height="102dp"
@@ -204,7 +219,7 @@
                     app:iconPadding="8dp" />
 
                 <Button
-                    android:id="@+id/button15"
+                    android:id="@+id/botao0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:height="102dp"
@@ -214,7 +229,7 @@
                     app:iconPadding="8dp" />
 
                 <Button
-                    android:id="@+id/button14"
+                    android:id="@+id/botaoCE"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:height="102dp"
@@ -224,7 +239,7 @@
                     app:iconPadding="8dp" />
 
                 <Button
-                    android:id="@+id/button13"
+                    android:id="@+id/botaoAdd"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:height="102dp"
@@ -234,6 +249,21 @@
                     app:iconPadding="8dp" />
             </TableRow>
         </TableLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </TableRow>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
