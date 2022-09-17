@@ -46,7 +46,9 @@ public class MainActivity extends Activity {
     }
 
     private void changeToResultScreen() {
-        Intent intent = new Intent(this, ResultActivity.class); // INTENT É QUEM TRANSPORTA OS DADOS
+        Intent intent = new Intent(this, ResultActivity.class);
+
+        // INTENT É QUEM TRANSPORTA OS DADOS
         // PARAMETROS DO INTENT(TELA ORIGEM, TELA DESTINO)
         EditText precoGasolina = (EditText) findViewById(R.id.precoGasolina);
         EditText precoEtanol = (EditText) findViewById(R.id.precoEtanol);

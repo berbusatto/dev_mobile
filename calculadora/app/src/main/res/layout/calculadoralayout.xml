@@ -53,13 +53,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="numberDecimal"
+                android:inputType="text"
                 android:textAlignment="viewEnd"
                 android:textColor="#84EF66"
-                android:textSize="36sp" />
+                android:textSize="36sp"
+                android:autofillHints="000" />
         </LinearLayout>
 
         <TableLayout
+            android:id="@+id/tableLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="1dp"
@@ -253,16 +255,17 @@
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button"
+            android:layout_height="0dp"
+            android:text="RESULTADO"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent">
 
     </TableRow>
 
