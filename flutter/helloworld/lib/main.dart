@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Primeiro flutter plo vscode'),
+      home: const MyHomePage(title: 'Primeiro flutter pelo vscode'),
     );
   }
 }
