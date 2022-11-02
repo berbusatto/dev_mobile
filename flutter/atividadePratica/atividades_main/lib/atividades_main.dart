@@ -2,7 +2,6 @@ import 'dart:io';
 import 'dart:math';
 
 // ABSTRAINDO STDIN PARA CADA TIPO
-
 double inputDouble() {
   return double.parse(stdin.readLineSync()!);
 }
@@ -78,7 +77,6 @@ int calculaIdadeDias(int anos, int meses, int dias) {
 }
 
 // EXERCICIO 09
-
 int calculaTotalAnos(int totalDias) {
   return totalDias ~/ 365;
 }
@@ -92,7 +90,6 @@ int calculaDiasRestantes(int totalDias) {
 }
 
 // EXERCICIO 10
-
 double calculaCreditoCliente(double saldo) {
   if (saldo > 400) {
     return saldo * 0.3;
@@ -106,7 +103,6 @@ double calculaCreditoCliente(double saldo) {
 }
 
 // EXERCICIO 11
-
 String calculaTipoTriangulo(int ladoA, int ladoB, int ladoC) {
   if (ladoA == ladoB && ladoB == ladoC) {
     return "Equilátero";
@@ -141,7 +137,6 @@ void calculaUmACem() {
 }
 
 // EXERCICIO 14
-
 void calculaCemAUm() {
   for (int j = 100; j > 0; j--) {
     print(j);
