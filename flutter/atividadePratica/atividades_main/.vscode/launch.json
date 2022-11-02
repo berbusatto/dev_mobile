@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "Dart (bin\\atividades_main.dart)",
+            "type": "dart",
+            "request": "launch",
+            "program": "bin\\atividades_main.dart",
+            "console": "terminal"
+        }
+    ]
+}
