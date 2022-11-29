@@ -32,29 +32,35 @@ class _HomeState extends State<Home> {
       centerTitle: true,
       backgroundColor: Colors.blueGrey,
       actions: <Widget>[
-        IconButton(icon: const Icon(Icons.refresh), onPressed: () {},)
+        IconButton(icon: const Icon(Icons.refresh), onPressed: () {
+          //_resetaValores();
+
+        },)
       ],
     ),
       backgroundColor: Colors.white,
-      body: Form(
-        key: _formkey,
-        child:
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                const Icon(Icons.directions_car,
-                    size: 60.0,
-                    color: Colors.blueGrey),
+      body: SingleChildScrollView(
+        padding: EdgeInsets.fromLTRB(20.0, 0, 20.0, 0),
+        child: Form(
+          key: _formkey,
+          child:
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  const Icon(Icons.directions_car,
+                      size: 60.0,
+                      color: Colors.blueGrey),
 
-            // CRIANDO MÉTODO PARA SETAR OS TEXTFIELD
-            buildTextFormFieldGasolina(),
-            buildTextFormFieldEtanol(),
-            buildContainerButton(context),
-            buildTextInfo()
+              // CRIANDO MÉTODO PARA SETAR OS TEXTFIELD
+              buildTextFormFieldGasolina(),
+              buildTextFormFieldEtanol(),
+              buildContainerButton(context),
+              buildTextInfo()
 
 
-        ],
-      ),
+          ],
+        ),
+        ),
       ),
     );
   }
@@ -73,6 +79,7 @@ class _HomeState extends State<Home> {
         labelText: "Preço da Gasolina",
         labelStyle: TextStyle(color: Colors.black54, fontSize: 20.0)
       ),
+      style: TextStyle(fontSize: 30.0),
       controller: gasolinaController,
 
     );
@@ -85,6 +92,7 @@ class _HomeState extends State<Home> {
           labelText: "Preço do Etanol",
           labelStyle: TextStyle(color: Colors.black54, fontSize: 20.0)
       ),
+      style: TextStyle(fontSize: 30.0),
       controller: etanolController,
     );
   }
@@ -120,4 +128,26 @@ class _HomeState extends State<Home> {
 
   }
 
+  void calcula(){
+    setState(() {
+      double gasolina = double.parse(gasolinaController.text);
+      double etanol = double.parse(etanolController.text);
+      double resultado = (etanol / gasolina);
+
+      if (resultado >0.70){
+        _infotext = "Percentual: (${resultado.toStringAsPrecision(3)}) \n\n Abasteça com gasolina";
+      } else{
+        _infotext = "Percentual: (${resultado.toStringAsPrecision(3)}) \n\n Abasteça com etanol";
+      }
+    });
+  }
+
+  void resetaValores(){
+    setState(() {
+      gasolinaController.text="";
+      etanolController.text="";
+      _infotext = "Informe o valor de cada combustível";
+
+    });
+  }
 }
