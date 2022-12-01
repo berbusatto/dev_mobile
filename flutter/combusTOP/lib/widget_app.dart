@@ -71,6 +71,8 @@ class _HomeState extends State<Home> {
 
                 // PARA QUE O CÓDIGO FICASSE MAIS LIMPO, FORAM CRIADOS MÉTODOS
                 // COM A LÓGICA DA CRIAÇÃO DOS COMPONENTES VISUAIS
+
+                buildBigSizedBox(),
                 buildTextFormFieldGasolina(),
                 buildSizedBox(),
                 buildTextFormFieldEtanol(),
@@ -86,6 +88,12 @@ class _HomeState extends State<Home> {
     );
   }
 
+  buildBigSizedBox(){
+    return const SizedBox(
+        height: 30.0
+    );
+
+  }
 
   buildSizedBox(){
     return const SizedBox(
