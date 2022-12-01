@@ -10,11 +10,11 @@ class Home extends StatefulWidget {
   State<Home> createState() => _HomeState();
 }
 
-// CLASSE QUE REPRESENTA O ESTADO DA PAGINA INCIAL
+// CLASSE QUE REPRESENTA O ESTADO DA PAGINA INICIAL
 class _HomeState extends State<Home> {
 
   //SETANDO CHAVE DO FORMULARIO
-  GlobalKey<FormState> _formkey = GlobalKey<FormState>();
+  final GlobalKey<FormState> _formkey = GlobalKey<FormState>();
 
   // INSTANCIANDO OBJETOS DO WIDGET PARA CAPTAR O INPUT
   TextEditingController gasolinaController = TextEditingController();
@@ -47,7 +47,7 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.orangeAccent,
         body: Container(
           alignment: Alignment.center,
-          padding: EdgeInsets.all(32),
+          padding: const EdgeInsets.all(32),
           decoration: const BoxDecoration(
             image: DecorationImage(
                 image:  AssetImage('images/fuel.jpg'),
@@ -88,7 +88,7 @@ class _HomeState extends State<Home> {
 
 
   buildSizedBox(){
-    return SizedBox(
+    return const SizedBox(
       height: 15.0
     );
   }
@@ -97,7 +97,7 @@ class _HomeState extends State<Home> {
   buildTextInfo(){
     return Text(_infotext,
     textAlign: TextAlign.center,
-    style: TextStyle(color:Colors.white,fontSize: 20.0),
+    style: const TextStyle(color:Colors.white,fontSize: 20.0),
     );
   }
 
@@ -109,7 +109,7 @@ class _HomeState extends State<Home> {
         labelText: "Preço da Gasolina",
         labelStyle: TextStyle(color: Colors.white, fontSize: 20.0)
       ),
-      style: TextStyle(color: Colors.white, fontSize: 28.0),
+      style: const TextStyle(color: Colors.white, fontSize: 28.0),
       controller: gasolinaController,
 
     );
@@ -126,7 +126,7 @@ class _HomeState extends State<Home> {
             labelText: "Preço do Etanol",
             labelStyle: TextStyle(color: Colors.white, fontSize: 20.0)
         ),
-        style: TextStyle(color: Colors.white,fontSize: 28.0),
+        style: const TextStyle(color: Colors.white,fontSize: 28.0),
         controller: etanolController,
       ),
     );
@@ -137,7 +137,7 @@ class _HomeState extends State<Home> {
 
      return Container(
        height: 50.0,
-      child: TextButton(
+       child: TextButton(
         style: ButtonStyle(
 
           // MUDANDO A COR DO ONPRESSED DO BOTÃO
@@ -145,11 +145,13 @@ class _HomeState extends State<Home> {
           backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
           overlayColor: MaterialStateProperty.resolveWith<Color?>(
                 (Set<MaterialState> states) {
-              if (states.contains(MaterialState.hovered))
+              if (states.contains(MaterialState.hovered)) {
                 return Colors.redAccent.withOpacity(0.04);
+              }
               if (states.contains(MaterialState.focused) ||
-                  states.contains(MaterialState.pressed))
+                  states.contains(MaterialState.pressed)) {
                 return Colors.redAccent.withOpacity(0.12);
+              }
               return null;
             },
           ),
