@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'CombusTOP',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.black54,
+        primaryColor: Colors.black38,
       ),
       home: Home(),
     );
