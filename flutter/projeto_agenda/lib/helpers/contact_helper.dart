@@ -18,14 +18,14 @@ class ContactHelper {
 
   ContactHelper.internal();
 
-  Database _db;
+  Database? _db;
 
   Future<Database> get db async {
-    if(_db != null){
-      return _db;
+    if(_db!.isOpen){
+      return _db!;
     } else {
       _db = await initDb();
-      return _db;
+      return _db!;
     }
   }
 
