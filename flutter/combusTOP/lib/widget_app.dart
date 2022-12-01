@@ -88,13 +88,14 @@ class _HomeState extends State<Home> {
     );
   }
 
+  // CRIA ESPAÇO EM BRANCO COM TAMANHO 30
   buildBigSizedBox(){
     return const SizedBox(
         height: 30.0
     );
-
   }
 
+  // CRIA ESPAÇO EM BRANCO COM TAMANHO 15
   buildSizedBox(){
     return const SizedBox(
       height: 15.0
